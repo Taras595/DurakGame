@@ -93,6 +93,15 @@ console.log(deck);
 }
 
 createDeck();
+createDeck();
+
+deck.sort(() => Math.random() - 0.5);
+
+const playerCards = deck.splice(0, 6);
+const enemyCards = deck.splice(0, 6);
+
+console.log(playerCards);
+console.log(enemyCards);
 </script>
     ...
 
