@@ -76,7 +76,9 @@ const ranks = ["6", "7", "8", "9", "10", "J", "Q", "K", "A"];
 let deck = [];
 
 function createDeck() {
-    deck = [];
+deck.sort(() => Math.random() - 0.5);
+
+console.log(deck);
 
     for (const suit of suits) {
         for (const rank of ranks) {
