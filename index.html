@@ -69,5 +69,28 @@ h1{
         <div class="card">10♥</div>
         <div class="card">A♦</div>
     </div>
+<script>
+const suits = ["♠", "♥", "♦", "♣"];
+const ranks = ["6", "7", "8", "9", "10", "J", "Q", "K", "A"];
+
+let deck = [];
+
+function createDeck() {
+    deck = [];
+
+    for (const suit of suits) {
+        for (const rank of ranks) {
+            deck.push({
+                rank: rank,
+                suit: suit
+            });
+        }
+    }
+
+    console.log(deck);
+}
+
+createDeck();
+</script>
 </body>
 </html>
